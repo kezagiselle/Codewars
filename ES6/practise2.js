@@ -1,19 +1,35 @@
 // 
 
-const mapByIdToName = (arr) => {
+// const mapByIdToName = (arr) => {
+//     const results = {};
+
+//     for (const {id, name} of arr) {
+//         results[id] = name;
+//     }
+//     return results;
+// };
+
+// const users = [
+//     { id: 1, name: 'Alice' },
+//     { id: 2, name: 'Bob' },
+//     { id: 3, name: 'Charlie' },
+// ];
+
+// const answers =  mapByIdToName(users);
+// console.log(answers);
+
+const mapIdToName = (arr) =>{
     const results = {};
 
-    for (const {id, name} of arr) {
-        results[id] = name;
+    for (const { id, name} of arr){
+      results[id] = name;
     }
     return results;
 };
-
 const users = [
     { id: 1, name: 'Alice' },
     { id: 2, name: 'Bob' },
     { id: 3, name: 'Charlie' },
 ];
-
-const answers =  mapByIdToName(users);
+const answers = mapIdToName(users);
 console.log(answers);

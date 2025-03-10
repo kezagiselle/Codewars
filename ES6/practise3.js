@@ -22,3 +22,5 @@ const items = [
 
 const answers =  countByType(items);
 console.log(answers);
+
+
